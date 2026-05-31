@@ -1127,19 +1127,45 @@
                 transform-origin: center top;
             }
 
-            /* Sections */
-            .section-title   { font-size: 1.75rem; }
-            .services-grid   { grid-template-columns: 1fr; }
-            .projects-grid   { grid-template-columns: 1fr; }
-            .certs-grid      { grid-template-columns: 1fr; }
-            .exp-grid        { grid-template-columns: 1fr; gap: 1.75rem; }
+            /* Section headers — center on mobile */
+            .section-title  { font-size: 1.75rem; text-align: center; }
+            .section-label  { text-align: center; display: block; }
+            .section-divider { margin: 0 auto 2rem; }
+            .section-desc   { text-align: center; margin: 0 auto; }
+
+            /* Grids */
+            .services-grid  { grid-template-columns: 1fr; }
+            .projects-grid  { grid-template-columns: 1fr; }
+            .certs-grid     { grid-template-columns: 1fr; }
+            .exp-grid       { grid-template-columns: 1fr; gap: 1.75rem; }
+
+            /* Services cards — center content */
+            .service-card   { text-align: center; }
+            .service-icon   { margin: 0 auto 1.2rem; }
+
+            /* Skills — center the label */
+            .skills-layout > div:last-child h3 { text-align: center; }
+            .tech-cloud     { justify-content: center; }
+
+            /* Experience — center group titles */
+            .exp-group-title { justify-content: center; }
+
+            /* Cert cards — center */
+            .cert-card      { flex-direction: column; align-items: center; text-align: center; }
 
             /* Project poster */
-            .poster-title { font-size: 1.2rem; }
-            .project-thumb { height: 160px; }
+            .poster-title   { font-size: 1.2rem; }
+            .project-thumb  { height: 160px; }
 
-            /* Contact */
+            /* Contact — center left column */
             .contact-layout { grid-template-columns: 1fr; gap: 2rem; }
+            .contact-layout > div:first-child { text-align: center; }
+            .contact-layout > div:first-child .section-desc { margin: 0 auto 2rem; }
+            .contact-item   { justify-content: center; }
+            .social-links   { justify-content: center; }
+
+            /* Form — full width inputs */
+            .contact-form .btn { width: 100%; justify-content: center; }
         }
 
         /* ── Small mobile (< 480px) ── */
@@ -1169,7 +1195,8 @@
             .section-label { font-size: 0.68rem; }
 
             /* Services */
-            .service-card { padding: 1.5rem; }
+            .service-card { padding: 1.5rem; text-align: center; }
+            .service-icon { margin: 0 auto 1rem; }
 
             /* Skills */
             .skills-layout { gap: 2rem; }
@@ -1419,7 +1446,7 @@
                         <div class="stat-label">Years Experience</div>
                     </div>
                     <div>
-                        <div class="stat-number">15+</div>
+                        <div class="stat-number">30+</div>
                         <div class="stat-label">Projects Delivered</div>
                     </div>
                     <div>
